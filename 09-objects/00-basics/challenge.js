@@ -1,6 +1,16 @@
-module.exports.createCourse = undefined;
+module.exports.createCourse = function(title, duration, students) {
+  var course = {};
+  course.title = title;
+  course.duration = duration;
+  course.students = students;
+  return course;
+};
 
-module.exports.addProperty = undefined;
+module.exports.addProperty = function(object, newProp, newValue) {
+  if 
+
+
+}
 
 module.exports.formLetter = undefined;
 
