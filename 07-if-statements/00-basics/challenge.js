@@ -10,21 +10,31 @@ module.exports.favoriteNumber = function(fav, guess) {
   }
 };
 
-module.exports.checkLock = function(a, b, c, d) {
-  if ((a === 3 || a === 5 || a === 7)) && (b === 2) && (5 <= c =< 100) && (9 < d < 20) {
-    return "correct";
-  }
+
+module.exports.checkLock = function(e1, e2, e3, e4) {
+  if (
+      (e1 === 3 || e1 === 5 || e1 === 7 ) &&
+      (e2 === 2) &&
+      (e3 <= 100 && e3 >= 5) &&
+      (e4 < 9 || e4 > 20)
+     ){
+      return 'correct';
+      }
   else {
-    return "incorrect";
-  }
+    return 'incorrect';
+       }
 };
 
 module.exports.canIGet = function(item, money) {
-  if ((item === "MacBook Air" && (money > 999)) || (item === "Macbook Pro" && (money > 1299)) || (item = "Mac Pro" && (money > 2499)) || (item = "Apple Sticker" && (money > 1))) {
-    return "true";
-  }
+  if ((item === 'MacBook Air' && money >= 999) ||
+     (item === 'MacBook Pro' && money >= 1299) ||
+     (item === 'Mac Pro' && money >= 2499) ||
+     (item === 'Apple Sticker' && money >= 1)) {
+        return true
+    }
   else {
-    return "false";
+    return false
   }
 };
+
 
